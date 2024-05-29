@@ -51,3 +51,7 @@
 &i2c0 {
 	status = "okay";
 };
+
+&saradc {
+	status = "okay";
+};
