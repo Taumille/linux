@@ -227,6 +227,12 @@
 	pinctrl-names = "default";
 	pinctrl-0 = <&i2c2_pins>;
 	status = "okay";
+
+	clock-frequency = <100000>;
+	nunchuk: joystick@52 {
+		compatible = "nintendo,nunchuk";
+		reg = <0x52>;
+	};
 };
 
 &i2c4 {
